@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sin, Cos, Tan</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="test">
+    <h1>Right Angle Triangle: SIN, COS, TAN</h1>
+    <p>--- A simple calculator dipicting the change in an unkown angle based on length. ---</p>
+
+    <ul style="line-height:180%">
+      <li>Hypotenuse <input type="number" value="10" id="hypo"></li>
+      <li>Adjacent <input type="number" value="1" id="adj"></li>
+      <li>Opposite <input type="number" value="1" id="opp"></li>
+      <li>Answer: <span id="output">-----</span><span>°</span></li>
+      <li><select name="selection" id="type">
+          <option>SIN</option>
+          <option>COS</option>
+          <option>TAN</option>
+        </select>
+        <button id="calc">Calculate</button>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- Load Javascript-->
+  <script src="random-library.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
