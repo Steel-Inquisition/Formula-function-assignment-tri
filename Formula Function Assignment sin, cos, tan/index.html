@@ -12,15 +12,16 @@
     <p>--- A simple calculator dipicting the change in an unkown angle based on length. ---</p>
 
     <ul style="line-height:180%">
-      <li>Hypotenuse (a) <input type="number" id="hypo"></li>
-      <li>Adjacent (b) <input type="number" id="adj"></li>
-      <li>Opposite (c) <input type="number" id="opp"></li>
-      <li>Answer: <span id="output">-----</span></li>
-      <li><select name="selection" id="calc">
-          <option value="sin">SIN</option>
-          <option value="cos">COS</option>
-          <option value="tan">TAN</option>
+      <li>Hypotenuse <input type="number" value="10" id="hypo"></li>
+      <li>Adjacent <input type="number" value="1" id="adj"></li>
+      <li>Opposite <input type="number" value="1" id="opp"></li>
+      <li>Answer: <span id="output">-----</span><span>°</span></li>
+      <li><select name="selection" id="type">
+          <option>SIN</option>
+          <option>COS</option>
+          <option>TAN</option>
         </select>
+        <button id="calc">Calculate</button>
       </li>
     </ul>
 
