@@ -42,9 +42,5 @@ function lengthGet(hypo, adj, opp, calc) {
 
     n = Math.asin(n) * 180 / Math.PI;
 
-    if (hypo < opp || hypo < adj) {
-        n = "The hypotenuse cannot be smaller than the other lengths."
-    }
-
     return n;
 }
