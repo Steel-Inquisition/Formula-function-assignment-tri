@@ -5,42 +5,31 @@ let hypoEl = document.getElementById("hypo");
 let adjEl = document.getElementById("adj");
 let oppEl = document.getElementById("opp");
 let calcEl = document.getElementById('calc');
-let typeEl = document.getElementById('type');
 let outputEl = document.getElementById('output');
 
 // Event Listener
-calcEl.addEventListener("click", calcNumber);
+calcEl.addEventListener("select", calcNumber);
 
 // Event Function
 function calcNumber() {
     let hypo = hypoEl.value;
     let adj = adjEl.value;
     let opp = oppEl.value;
-    let calc = typeEl.value;
-
-    let n;
+    let calc = calcEl.value;
 
     // Process and Output
     outputEl.innerHTML = lengthGet(hypo, adj, opp, calc);
 }
 
-function lengthGet(hypo, adj, opp, calc) {
+function lengthGet(hypo, adj, opp, calc, sin, cos, tan) {
 
-    if (calc == 'SIN') {
-        n = (opp / hypo);
+    // if (calc == sin) {
+    //     let n = (opp / hypo);
+    // }
 
-        console.log("sin");
-    } else if (calc == 'COS') {
-        n = (adj / hypo);
+    // n = Math.asin(n) * 180 / Math.PI;
 
-        console.log("cos");
-    } else if (calc == 'TAN') {
-        n = (opp / adj);
+    console.log(calc);
 
-        console.log("tan");
-    }
-
-    n = Math.asin(n) * 180 / Math.PI;
-
-    return n;
+    // return n;
 }
